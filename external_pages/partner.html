@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convenient Grocery</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=EB+Garamond:wght@400;500&family=Raleway:wght@100;200;400;700;800&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="navigate">
+        <div class="content">
+            <div class="a">
+                <a href="../index.html">Convenient Grocery</a>
+                <div class="b">Stay Home, Stay Safe</div>
+            </div>
+            <button class="signin" onclick="document.location.href = './login.html'">
+                Log In
+            </button>
+            <button class="signup" onclick="document.location.href = './singup.html'">
+                Sign Up
+            </button>
+        </div>
+    </div>
+    <div class="maincontent maincontent--center" style="margin-top: 2vw;">
+        <div class="section1" style="width: 90%; height: fit-content; box-sizing: border-box; padding: 1vw; border-radius: 1vw; position: relative;">
+            <h1 class="h1">
+                Work with US
+            </h1>
+            <div class="comment">
+                We have flexible work timings, no bindings
+            </div>
+            <div class="content">
+                <div class="content content--column" style="background-color: rgb(255,221,167); margin:3vw; padding: 1vw; border-radius: 1vw;">
+                    <div class="a aa">Details</div>
+                    <input class = "part2"type="text" placeholder = "Name" id="zero">
+                    <input class = "part2"type="text" placeholder = "Mobile Number" id="one">
+                    <input class = "part2"type="email" placeholder="E-Mail" id="two">
+                    <textarea class = "part1"placeholder="Address" id="three"></textarea>
+                    <div class="content">
+                        <input type="checkbox" class="check" id="four"> <font class="comment">I Agree that I am 18 Years old</font>
+                    </div>
+                    <div class="content">
+                        <input type="checkbox" class="check" id="five"> <font class = "comment">I have a valid Driving License</font>
+                    </div>
+                </div>
+                <div class="content content--column" style="background-color: rgb(255,221,167); margin:3vw; padding: 1vw; border-radius: 1vw;">
+                    <div class="a aa">Documents</div>
+                    <div class="content content--width"  style="justify-content: flex-start;margin: 1vw 0 0 2vw">
+                        <div class="comment">Driving License [.pdf or .jpg file only]</div>
+                    </div>
+                    <input type="file" id="six"  class="part2" style = "width: 20vw" accept=".pdf, .jpg, .png" required>
+                    <div class="content content--width"  style="justify-content: flex-start;margin: 1vw 0 0 2vw">
+                        <div class="comment">Proof of Address [.pdf or .jpg file only]</div>
+                    </div>
+                    <input type="file" id="seven"  class="part2" style = "width: 20vw" accept=".pdf, .jpg, .png" required>
+                    <button class="learn" style="margin: 1vw 0;" onclick="submitdocs()">
+                        SUBMIT
+                    </button>
+                </div>
+            </div>
+            <div class="condition">
+                <div class="comment">**WE WILL CONTACT YOU WITHIN 4-5 WORKING DAYS</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
