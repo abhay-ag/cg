@@ -76,9 +76,14 @@ function submitdocs(){
 }
 function send(){
     var mess = document.getElementById("mess").value
-    if(mess !==''){
+    var mess1 = document.getElementById("mess1").value
+    if(mess !=='' || mess1 !== ''){
         document.getElementById("mess").value = ''
+        document.getElementById("mess1").value = ''
         alert("Message Sent!!!")
         document.location.href = "../index.html"
+    }
+    else{
+        alert("Fill all the details!!")
     }
 }
